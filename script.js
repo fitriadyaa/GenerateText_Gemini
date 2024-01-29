@@ -10,7 +10,7 @@ generateButton.addEventListener("click", async () => {
   }
 
   // Make a POST request to the Flask API
-  const response = await fetch("http://192.168.31.157:8080/generate_text_stream", {
+  const response = await fetch("https://0043-182-253-124-242.ngrok-free.app/generate_text_stream", {
   method: "POST",
   headers: {
     "Content-Type": "application/json",
