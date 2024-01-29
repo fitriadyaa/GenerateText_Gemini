@@ -16,16 +16,6 @@ To run this project, you will need to add the following environment variables to
 `API_KEY` 
 
 This is Gemini Pro Api you can create in https://makersuite.google.com/app/apikey
-
-
-## Installation
-
-Install my-project with npm
-
-```bash
-  npm install my-project
-  cd my-project
-```
     
 ## Run Locally
 
