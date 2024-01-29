@@ -75,7 +75,7 @@ This project is created by <a href="https://github.com/fitriadyaa">fitriadyaa</a
 
 ## Support Me ☕
 
-If you find MyGithubUser helpful or just want to support my work, you can buy me a coffee! ☕
+If you find this repo's helpful or just want to support my work, you can buy me a coffee! ☕
 
 [![Support Me on Saweria](https://img.shields.io/badge/Support%20Me%20on-Saweria-brightgreen)](https://saweria.co/fitriadyaa)
 
