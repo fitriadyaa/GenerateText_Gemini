@@ -73,3 +73,9 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Author
 This project is created by <a href="https://github.com/fitriadyaa">fitriadyaa</a>, <a href="https://github.com/ramenaru">ramenaru</a>
 
+## Support Me ☕
+
+If you find MyGithubUser helpful or just want to support my work, you can buy me a coffee! ☕
+
+[![Support Me on Saweria](https://img.shields.io/badge/Support%20Me%20on-Saweria-brightgreen)](https://saweria.co/fitriadyaa)
+
