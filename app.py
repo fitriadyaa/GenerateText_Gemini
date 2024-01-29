@@ -9,6 +9,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 genai.configure(api_key = os.environ.get('API_KEY'))
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "./service_account.json"
 
 app = Flask(__name__)
 CORS(app)
