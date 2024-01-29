@@ -10,13 +10,16 @@ generateButton.addEventListener("click", async () => {
   }
 
   // Make a POST request to the Flask API
-  const response = await fetch("https://0043-182-253-124-242.ngrok-free.app/generate_text_stream", {
-  method: "POST",
-  headers: {
-    "Content-Type": "application/json",
-  },
-  body: JSON.stringify({ prompt }),
-  });
+  const response = await fetch(
+    "https://be9c-182-253-124-242.ngrok-free.app/generate_text_stream",
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ prompt }),
+    }
+  );
 
   if (!response.ok) {
     console.error("Error:", response.statusText);
@@ -44,5 +47,4 @@ generateButton.addEventListener("click", async () => {
     generatedText.innerHTML = generatedTextContent;
     await new Promise((resolve) => setTimeout(resolve, 50));
   }
-
 });
