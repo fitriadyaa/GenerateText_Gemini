@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gemini Pro</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <style>
+         body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          
+        }
+
+      .container {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 600px;
+        margin-bottom: 30px;
+      }
+
+      input,
+      button {
+        padding: 12px 20px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+      }
+
+      input {
+        background-color: #f8f8f8;
+        font-size: 1rem;
+        margin-bottom: 15px;
+      }
+
+      button {
+        background-color: #007bff;
+        color: white;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+
+      #generatedText {
+        background-color: #f8f8f8;
+        padding: 15px;
+        border-radius: 5px;
+        font-size: 1rem;
+        white-space: pre-wrap;
+        overflow-wrap: break-word;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Gemini Pro</h1>
+    <div>
+      <label for="prompt">Enter a prompt:</label>
+      <input type="text" id="prompt" placeholder="Enter your prompt" />
+      <button id="generateButton">Generate</button>
+    </div>
+    <div>
+      <h2>Generated Text:</h2>
+      <pre id="generatedText"></pre>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
