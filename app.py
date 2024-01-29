@@ -4,8 +4,7 @@ import google.generativeai as genai
 from flask import Flask, Response, jsonify, request, stream_with_context
 from flask_cors import CORS
 from dotenv import load_dotenv
-from flask_limiter import Limiter
-from flask_limiter.util import get_remote_address
+
 
 load_dotenv()
 
@@ -13,12 +12,6 @@ genai.configure(api_key = os.environ.get('API_KEY'))
 
 app = Flask(__name__)
 CORS(app)
-
-limiter = Limiter(
-    app,
-    key_func=get_remote_address, 
-    default_limits=["1 per minute"] 
-)
 
 # Set up the model
 generation_config = {
@@ -60,7 +53,6 @@ def index():
 
 
 @app.route("/generate_text", methods=["GET", "POST"])
-@limiter.limit("1 per minute")
 def generate_text():
     if request.method == "POST":
         input_data = request.get_json()
@@ -89,7 +81,6 @@ def generate_text():
 
 
 @app.route("/generate_text_stream", methods=["GET", "POST"])
-@limiter.limit("1 per minute")
 def generate_text_stream():
     if request.method == "POST":
         input_data = request.get_json()
