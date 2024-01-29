@@ -22,7 +22,7 @@ async function sendMessage() {
 
 async function generateText(prompt) {
   try {
-    const response = await fetch("https://be9c-182-253-124-242.ngrok-free.app/generate_text_stream", {
+    const response = await fetch("https://ede0-182-253-124-242.ngrok-free.app/generate_text_stream", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
