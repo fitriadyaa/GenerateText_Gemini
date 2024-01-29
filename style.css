@@ -1,4 +1,11 @@
 body {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px);
+    margin: 0;
+    padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
@@ -7,9 +14,10 @@ body {
 }
 
 .container {
+    margin-top: 0;
     width: 90%;
     max-width: 500px;
-    margin: 20px auto 0;
+    margin: 10px auto 0;
     background-color: #fff;
     border-radius: 12px;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
@@ -80,6 +88,7 @@ input[type="text"] {
     padding: 15px 0;
     font-size: 0.9rem;
     color: #666;
+    position: static;
     border-top: 1px solid #e2e2e2;
     background-color: #fff;
     position: fixed;
@@ -88,8 +97,13 @@ input[type="text"] {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .fadeIn {
@@ -106,7 +120,8 @@ input[type="text"] {
         height: 300px;
     }
 
-    input[type="text"], .send-button {
+    input[type="text"],
+    .send-button {
         padding: 10px 14px;
         font-size: 0.9rem;
     }
@@ -131,10 +146,13 @@ input[type="text"] {
 }
 
 @keyframes typing {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: scale(1);
         opacity: 1;
     }
+
     50% {
         transform: scale(1.2);
         opacity: 0.7;
